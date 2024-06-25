@@ -1,0 +1,36 @@
+{
+  "name": "product-list-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "*.test.ts",
+      "db/*"
+    ],
+    "delay": "2"
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Dmytro Mieshkov <dmitriymeshkov.a@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "mongoose": "^8.4.3",
+    "morgan": "^1.10.0"
+  }
+}
